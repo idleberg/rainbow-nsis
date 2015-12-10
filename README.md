@@ -7,14 +7,24 @@
 
 Add NSIS support to [Rainbow][1] highlighter.
 
+## Installation
+
+### GitHub
+
+1. Download [Rainbow][2] library
+2. Download `language/nsis.js`
+3. Follow [build instructions][3]
+
 ## License
 
-Released under [The MIT License][3].
+Released under [The MIT License][4].
 
 ## Donate
 
-You are welcome support this project using [Flattr][3] or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
+You are welcome support this project using [Flattr][5] or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
 
 [1]: https://craig.is/making/rainbows
-[2]: LICENSE
-[3]: https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/rainbow-nsis-mode
+[2]: https://github.com/ccampbell/rainbow
+[3]: https://github.com/ccampbell/rainbow#building
+[4]: LICENSE
+[5]: https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/rainbow-nsis-mode
