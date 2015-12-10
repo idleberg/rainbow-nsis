@@ -1,0 +1,16 @@
+{
+  "name": "rainbow-nsis-mode",
+  "version": "1.0.0",
+  "author": "Jan T. Sott",
+  "license": "MIT",
+  "homepage": "https://github.com/idleberg/rainbow-nsis-mode",
+  "repository": "https://github.com/idleberg/rainbow-nsis-mode",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-jshint": "^2.0.0"
+  },
+  "scripts": {
+    "test": "gulp lint"
+  }
+}
