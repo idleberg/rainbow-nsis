@@ -6,9 +6,10 @@
   "homepage": "https://github.com/idleberg/rainbow-nsis-mode",
   "repository": "https://github.com/idleberg/rainbow-nsis-mode",
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-debug": "^2.1.2",
-    "gulp-jshint": "^2.0.0"
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.3"
   },
   "scripts": {
     "test": "gulp lint"
