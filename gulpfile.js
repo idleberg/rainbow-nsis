@@ -1,16 +1,36 @@
-var gulp = require('gulp');
-var debug = require('gulp-debug');
-var jshint = require('gulp-jshint');
+// Dependencies
+const concat = require('gulp-concat');
+const debug  = require('gulp-debug');
+const gulp   = require('gulp');
+const eslint = require('gulp-eslint');
+const uglify = require('gulp-uglify');
 
-// Tasks
-gulp.task('lint', ['jshint']);
+// File definitions
+const jsFiles = [
+    './src/nsis.js',
+];
 
-// Exclude node_modules
-var self = '!node_modules/**/*';
+const options = {
+    output: {
+        comments: /^!/
+    }
+};
+
+// Build custom Rainbow version with NSIS
+gulp.task('build', gulp.series( (done) => {
+    gulp.src(jsFiles)
+        .pipe(uglify(options))
+        .pipe(concat('nsis.min.js'))
+        .pipe(gulp.dest('dist'));
+    done();
+}));
 
 // Lint JavaScript files
-gulp.task('jshint', function() {
-    return gulp.src(['./language/*.js', self])
-        .pipe(debug({title: 'jshint:'}))
-        .pipe(jshint())
-});
+gulp.task('lint', gulp.series( (done) => {
+    gulp.src(jsFiles)
+        .pipe(debug({title: 'eslint:'}))
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
+    done();
+}));

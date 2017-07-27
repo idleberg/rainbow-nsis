@@ -1,17 +1,29 @@
 {
-  "name": "rainbow-nsis-mode",
-  "version": "1.0.3",
-  "author": "Jan T. Sott",
+  "name": "rainbow-nsis",
+  "version": "0.1.0",
+  "description": "NSIS support for the Rainbow syntax highlighter",
+  "repository": "https://github.com/idleberg/rainbow-nsis",
   "license": "MIT",
-  "homepage": "https://github.com/idleberg/rainbow-nsis-mode",
-  "repository": "https://github.com/idleberg/rainbow-nsis-mode",
+  "keywords": [
+    "highlighter",
+    "nsis",
+    "rainbow",
+    "rainbow.js",
+    "syntax highlighter"
+  ],
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-debug": "^2.1.2",
-    "gulp-jshint": "^2.0.1",
-    "jshint": "^2.9.3"
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-uglify": "^3.0.0",
+    "rainbow-code": "^2.1.2"
   },
   "scripts": {
+    "build": "gulp build",
+    "postinstall": "gulp build",
     "test": "gulp lint"
   }
 }

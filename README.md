@@ -1,30 +1,40 @@
-# rainbow-nsis-mode
+# rainbow-nsis
 
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![GitHub](https://img.shields.io/github/release/idleberg/rainbow-nsis-mode.svg?style=flat-square)](https://github.com/idleberg/rainbow-nsis-mode/releases)
-[![David](https://img.shields.io/david/dev/idleberg/rainbow-nsis-mode.svg?style=flat-square)](https://david-dm.org/idleberg/rainbow-nsis-mode?type=dev)
-[![Travis CI](https://img.shields.io/travis/idleberg/rainbow-nsis-mode.svg?style=flat-square)](https://travis-ci.org/idleberg/rainbow-nsis-mode)
+[![npm](https://img.shields.io/npm/v/rainbow-nsis.svg?style=flat-square)](https://www.npmjs.org/package/rainbow-nsis)
+[![Bower](https://img.shields.io/bower/v/rainbow-nsis.svg?style=flat-square)]()
+[![Travis](https://img.shields.io/travis/idleberg/rainbow-nsis.svg?style=flat-square)](https://travis-ci.org/idleberg/rainbow-nsis)
+[![David](https://img.shields.io/david/dev/idleberg/rainbow-nsis.svg?style=flat-square)](https://david-dm.org/idleberg/rainbow-nsis?type=dev)
 
-Add NSIS support to [Rainbow][1] highlighter.
+NSIS syntax highlighter for [Rainbow](https://github.com/ccampbell/rainbow), a code syntax highlighting library written in Javascript.
 
 ## Installation
 
-### GitHub
+### npm
 
-1. Download [Rainbow][2] library
-2. Download `language/nsis.js`
-3. Follow [build instructions][3]
+```bash
+$ npm install rainbow-nsis
+```
+### Bower
+
+```bash
+$ bower install rainbow-nsis
+
+# Build
+$ cd rainbow-nsis
+$ yarn || npm install
+```
+
+## Usage
+
+### Build
+
+A minified JavaScript package will be built automatically after installing with NPM. To manually trigger a build, run `gulp build`. If you wish to support [InstallOptions](http://nsis.sourceforge.net/Docs/InstallOptions/Readme.html), use `gulp build --ini` to include the highlighter for INI files.
 
 ## License
 
-Released under [The MIT License][4].
+This work is licensed under the [The MIT License](LICENSE.md).
 
 ## Donate
 
-You are welcome support this project using [Flattr][5] or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
-
-[1]: https://craig.is/making/rainbows
-[2]: https://github.com/ccampbell/rainbow
-[3]: https://github.com/ccampbell/rainbow#building
-[4]: LICENSE
-[5]: https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/rainbow-nsis-mode
+You are welcome support this project using [Flattr](https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/rainbow-nsis) or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
