@@ -29,7 +29,7 @@ $ yarn || npm install
 
 ### Build
 
-A minified JavaScript package will be built automatically after installing with NPM. To manually trigger a build, run `gulp build`. If you wish to support [InstallOptions](http://nsis.sourceforge.net/Docs/InstallOptions/Readme.html), use `gulp build --ini` to include the highlighter for INI files.
+A minified JavaScript package will be built automatically after installing with NPM. To manually trigger a build, run `gulp build`.
 
 ## License
 
