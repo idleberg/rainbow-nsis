@@ -22,7 +22,7 @@ const options = {
 // Build custom Rainbow version with NSIS
 gulp.task('build:pack', gulp.series( (done) => {
     gulp.src(jsFiles)
-        .pipe(concat('rainbow-nsis.min.js'))
+        .pipe(concat('rainbow.pack.js'))
         .pipe(uglify(options))
         .pipe(gulp.dest('dist'));
     done();
