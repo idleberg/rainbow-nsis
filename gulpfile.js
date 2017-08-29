@@ -3,11 +3,13 @@ const concat = require('gulp-concat');
 const debug  = require('gulp-debug');
 const gulp   = require('gulp');
 const eslint = require('gulp-eslint');
+const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 
 // File definitions
 const jsFiles = [
-    './src/nsis.js',
+    './node_modules/rainbow-code/dist/rainbow.js',
+    './src/nsis.js'
 ];
 
 const options = {
@@ -18,9 +20,13 @@ const options = {
 
 // Build custom Rainbow version with NSIS
 gulp.task('build', gulp.series( (done) => {
-    gulp.src(jsFiles)
+    gulp.src('./src/nsis.js')
+        .pipe(concat('nsis.js'))
+        .pipe(gulp.dest('dist'))
         .pipe(uglify(options))
-        .pipe(concat('nsis.min.js'))
+        .pipe(rename({
+            basename: 'nsis.min'
+        }))
         .pipe(gulp.dest('dist'));
     done();
 }));
