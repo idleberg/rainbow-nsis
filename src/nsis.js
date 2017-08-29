@@ -1,4 +1,4 @@
-/*! rainbow-nsis v1.1.0 | MIT License | https://github.com/idleberg/rainbow-nsis */
+/*! rainbow-nsis v1.2.1 | MIT License | https://github.com/idleberg/rainbow-nsis */
 
 Rainbow.extend('nsis', [
     {
