@@ -3,7 +3,6 @@ const concat = require('gulp-concat');
 const debug  = require('gulp-debug');
 const gulp   = require('gulp');
 const eslint = require('gulp-eslint');
-const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 
 // File definitions
@@ -23,12 +22,8 @@ const options = {
 // Build custom Rainbow version with NSIS
 gulp.task('build:pack', gulp.series( (done) => {
     gulp.src(jsFiles)
-        .pipe(concat('rainbow-nsis.js'))
-        .pipe(gulp.dest('dist'))
+        .pipe(concat('rainbow-nsis.min.js'))
         .pipe(uglify(options))
-        .pipe(rename({
-            basename: 'rainbow-nsis.min'
-        }))
         .pipe(gulp.dest('dist'));
     done();
 }));
