@@ -20,33 +20,33 @@ const options = {
 };
 
 // Build custom Rainbow version with NSIS
-gulp.task('build:pack', gulp.series( (done) => {
+gulp.task('build:pack', (done) => {
     gulp.src(jsFiles)
         .pipe(concat('rainbow.pack.js'))
         .pipe(uglify(options))
         .pipe(gulp.dest('dist'));
     done();
-}));
+});
 
 // Build uglified NSIS mode
-gulp.task('build:mode', gulp.series( (done) => {
+gulp.task('build:mode', (done) => {
     gulp.src('./src/nsis.js')
         .pipe(concat('nsis.min.js'))
         .pipe(uglify(options))
         .pipe(gulp.dest('dist'));
     done();
-}));
+});
 
 
 // Lint JavaScript files
-gulp.task('lint', gulp.series( (done) => {
+gulp.task('lint', (done) => {
     gulp.src(jsFiles)
         .pipe(debug({title: 'eslint:'}))
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
     done();
-}));
+});
 
 // Available tasks
 gulp.task('build', gulp.parallel('build:mode', 'build:pack', (done) => {
