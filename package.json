@@ -1,6 +1,6 @@
 {
   "name": "rainbow-nsis",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "NSIS support for the Rainbow syntax highlighter",
   "repository": "https://github.com/idleberg/rainbow-nsis",
   "license": "MIT",
