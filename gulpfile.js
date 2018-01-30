@@ -21,7 +21,7 @@ const options = {
 
 // Build custom Rainbow version with NSIS
 gulp.task('build:pack', (done) => {
-    gulp.src(jsFiles)
+    gulp.src(jsFiles, {allowEmpty: true})
         .pipe(concat('rainbow.pack.js'))
         .pipe(uglify(options))
         .pipe(gulp.dest('dist'));
@@ -40,7 +40,7 @@ gulp.task('build:mode', (done) => {
 
 // Lint JavaScript files
 gulp.task('lint', (done) => {
-    gulp.src(jsFiles)
+    gulp.src(jsFiles, {allowEmpty: true})
         .pipe(debug({title: 'eslint:'}))
         .pipe(eslint())
         .pipe(eslint.format())
