@@ -10,15 +10,9 @@ NSIS syntax highlighter for [Rainbow](https://github.com/ccampbell/rainbow), a c
 
 ## Installation
 
-### npm
 
 ```bash
 $ npm install rainbow-nsis
-```
-### Bower
-
-```bash
-$ bower install rainbow-nsis
 
 # Build
 $ cd rainbow-nsis
