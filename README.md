@@ -12,6 +12,7 @@ NSIS syntax highlighter for [Rainbow](https://github.com/ccampbell/rainbow), a c
 
 
 ```bash
+# Install
 $ npm install rainbow-nsis
 
 # Build
