@@ -12,14 +12,14 @@
     "syntax highlighter"
   ],
   "devDependencies": {
-    "babel-eslint": "^8.1.2",
-    "eslint": "^4.14.0",
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.1.0",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-debug": "^3.2.0",
-    "gulp-eslint": "^4.0.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-eslint": "^5.0.0",
     "gulp-uglify": "^3.0.0",
-    "rainbow-code": "^2.1.2"
+    "rainbow-code": "^2.1.4"
   },
   "eslintConfig": {
     "parser": "babel-eslint"
