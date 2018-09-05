@@ -7,6 +7,8 @@
 
 NSIS syntax highlighter for [Rainbow](https://github.com/ccampbell/rainbow), a code syntax highlighting library written in Javascript.
 
+[Demo Time](http://idleberg.github.io/rainbow-nsis/) 🙌
+
 ## Installation
 
 

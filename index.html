@@ -27,7 +27,7 @@ RequestExecutionLevel user
 InstallDir "$PROGRAMFILES\installer_name"
 
 ; Pages ------------------------------------
-!insertmacro MUI_PAGE_COMPONENTS 
+!insertmacro MUI_PAGE_COMPONENTS
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
 
@@ -38,7 +38,7 @@ InstallDir "$PROGRAMFILES\installer_name"
 Section "section" SECTION_INDEX
 
     ${If} 0 == 1
-      nsExec::Exec "calc.exe" 
+      nsExec::Exec "calc.exe"
     ${Else}
       DetailPrint "Zero will never be one"
     ${EndIf}
