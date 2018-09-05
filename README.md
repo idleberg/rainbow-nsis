@@ -2,8 +2,8 @@
 
 [![npm](https://flat.badgen.net/npm/license/rainbow-nsis)](https://www.npmjs.org/package/rainbow-nsis)
 [![npm](https://flat.badgen.net/npm/v/rainbow-nsis)](https://www.npmjs.org/package/rainbow-nsis)
-[![Travis](https://flat.badgen.net/travis/idleberg/rainbow-nsis)](https://travis-ci.org/idleberg/rainbow-nsis)
-[![David](https://flat.badgen.net/david/dev/idleberg/rainbow-nsis)](https://david-dm.org/idleberg/rainbow-nsis?type=dev)
+[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/rainbow-nsis)](https://circleci.com/gh/idleberg/rainbow-nsis/)
+[![David](https://flat.badgen.net/david/dev/idleberg/rainbow-nsis)](https://david-dm.org/idleberg/rainbow-nsis
 
 NSIS syntax highlighter for [Rainbow](https://github.com/ccampbell/rainbow), a code syntax highlighting library written in Javascript.
 
