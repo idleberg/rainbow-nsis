@@ -12,12 +12,12 @@
     "syntax highlighter"
   ],
   "devDependencies": {
-    "babel-eslint": "^9.0.0",
-    "eslint": "^5.5.0",
-    "gulp": "^4.0.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",
-    "gulp-eslint": "^5.0.0",
+    "gulp-eslint": "^6.0.0",
     "gulp-uglify": "^3.0.1",
     "rainbow-code": "^2.1.4"
   },
