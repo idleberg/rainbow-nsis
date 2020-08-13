@@ -3,15 +3,15 @@
 Rainbow.extend('nsis', [
     {
         'name': 'comment.line',
-        'pattern': /(\#|;)[\s\S]*?$/gm
+        'pattern': /(#|;)[\s\S]*?$/gm
     },
     {
         'name': 'comment.block',
-        'pattern': /\/\*[\s\S]*?\*\/|(\/\/|\#)[\s\S]*?$/gm
+        'pattern': /\/\*[\s\S]*?\*\/|(\/\/|#)[\s\S]*?$/gm
     },
     {
         'name': 'constant.numeric',
-        'pattern': /\b(\d+(\.\d+)?(e(\+|\-)?\d+)?(f|d)?|0x[\da-f]+)\b/gi
+        'pattern': /\b(\d+(\.\d+)?(e(\+|-)?\d+)?(f|d)?|0x[\da-f]+)\b/gi
     },
     {
         'name': 'constant.language',
@@ -39,11 +39,11 @@ Rainbow.extend('nsis', [
     },
     {
         'name': 'support.compiler',
-        'pattern': /\!(include|addincludedir|addplugindir|appendfile|cd|delfile|echo|error|execute|packhdr|pragma|finalize|getdllversion|gettlbversion|system|tempfile|warning|verbose|define|undef|insertmacro|macro|macroend|makensis|searchparse|searchreplace)(?=\(|\b)/g
+        'pattern': /!(include|addincludedir|addplugindir|appendfile|cd|delfile|echo|error|execute|packhdr|pragma|finalize|getdllversion|gettlbversion|system|tempfile|warning|verbose|define|undef|insertmacro|macro|macroend|makensis|searchparse|searchreplace)(?=\(|\b)/g
     },
     {
         'name': 'entity.compiler.block',
-        'pattern': /(\!)(ifdef|ifndef|if|ifmacrodef|ifmacrondef|else|endif)(?=\(|\b)/g
+        'pattern': /(!)(ifdef|ifndef|if|ifmacrodef|ifmacrondef|else|endif)(?=\(|\b)/g
     },
     {
         'name': 'keyword.command',
@@ -51,7 +51,7 @@ Rainbow.extend('nsis', [
     },
     {
         'name': 'keyword.plugin',
-        'pattern': /\b(\w+\:\:\w+)(?=\(|\b)/g
+        'pattern': /\b(\w+::\w+)(?=\(|\b)/g
     },
     {
         'name': 'entity.command.block',
@@ -70,7 +70,7 @@ Rainbow.extend('nsis', [
                     },
                     3: 'string.close'
                 },
-                'pattern': /(\#\{)(.*?)(\})/g
+                'pattern': /(#\{)(.*?)(\})/g
             }],
             3: 'string.close'
         },
