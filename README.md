@@ -10,7 +10,6 @@ NSIS syntax highlighter for [Rainbow](https://github.com/ccampbell/rainbow), a c
 
 ## Installation
 
-
 ```bash
 # Install
 $ npm install rainbow-nsis
@@ -24,7 +23,7 @@ $ yarn || npm install
 
 ### Build
 
-A minified JavaScript package will be built automatically after installing with NPM. To manually trigger a build, run `gulp build`.
+A minified JavaScript package will be built automatically after installing with NPM. To manually trigger a build, run `npm run build`.
 
 ## License
 
