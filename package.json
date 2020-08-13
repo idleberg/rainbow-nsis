@@ -4,6 +4,11 @@
   "description": "NSIS support for the Rainbow syntax highlighter",
   "repository": "https://github.com/idleberg/rainbow-nsis",
   "license": "MIT",
+  "scripts": {
+    "build": "gulp build",
+    "postinstall": "npm run build",
+    "test": "gulp lint"
+  },
   "keywords": [
     "highlighter",
     "nsis",
@@ -13,7 +18,7 @@
   ],
   "devDependencies": {
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.2",
+    "eslint": "^7.6.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",
@@ -24,9 +29,9 @@
   "eslintConfig": {
     "parser": "babel-eslint"
   },
-  "scripts": {
-    "build": "gulp build",
-    "postinstall": "npm run build",
-    "test": "gulp lint"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
   }
 }
