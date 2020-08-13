@@ -6,8 +6,9 @@
   "license": "MIT",
   "scripts": {
     "build": "gulp build",
-    "postinstall": "npm run build",
-    "test": "gulp lint"
+    "fix": "eslint --fix ./src",
+    "lint": "eslint ./src",
+    "test": "npm run lint"
   },
   "keywords": [
     "highlighter",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^7.6.0",
+    "eslint-config-recommended": "^4.1.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",

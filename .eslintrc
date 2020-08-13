@@ -1,0 +1,18 @@
+{
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": "off",
+    "no-undef": "off"
+  },
+  "globals": {
+    "atom": true
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+  }
+}

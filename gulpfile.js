@@ -2,7 +2,6 @@
 const concat = require('gulp-concat');
 const debug  = require('gulp-debug');
 const gulp   = require('gulp');
-const eslint = require('gulp-eslint');
 const uglify = require('gulp-uglify');
 
 // File definitions
@@ -34,17 +33,6 @@ gulp.task('build:mode', (done) => {
         .pipe(concat('nsis.min.js'))
         .pipe(uglify(options))
         .pipe(gulp.dest('dist'));
-    done();
-});
-
-
-// Lint JavaScript files
-gulp.task('lint', (done) => {
-    gulp.src(jsFiles, {allowEmpty: true})
-        .pipe(debug({title: 'eslint:'}))
-        .pipe(eslint())
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
     done();
 });
 
