@@ -4,6 +4,7 @@
   "description": "NSIS support for the Rainbow syntax highlighter",
   "repository": "https://github.com/idleberg/rainbow-nsis",
   "license": "MIT",
+  "main": "dist/nsis.js",
   "scripts": {
     "build": "rollup --config",
     "dev": "npm run start",
@@ -25,7 +26,8 @@
     "eslint": "^7.6.0",
     "eslint-config-recommended": "^4.1.0",
     "husky": "^4.2.5",
-    "rollup": "^2.24.0"
+    "rollup": "^2.24.0",
+    "rollup-plugin-terser": "^7.0.0"
   },
   "eslintConfig": {
     "parser": "babel-eslint"
