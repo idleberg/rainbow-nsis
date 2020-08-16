@@ -1,9 +1,21 @@
-export default {
-  input: 'src/nsis.js',
-  output: {
-    dir: 'dist',
-    format: 'umd'
+import { terser } from "rollup-plugin-terser";
+
+export default [
+  {
+    input: 'src/nsis.js',
+    output: {
+      dir: 'dist',
+      format: 'umd'
+    },
   },
-  plugins: [
-  ]
-};
+  {
+    input: 'src/nsis.js',
+    output: {
+      file: 'dist/nsis.min.js',
+      format: 'umd'
+    },
+    plugins: [
+      terser()
+    ]
+  }
+];
