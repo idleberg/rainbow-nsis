@@ -24,6 +24,7 @@
     "@typescript-eslint/parser": "^3.9.0",
     "eslint": "^7.6.0",
     "eslint-config-recommended": "^4.1.0",
+    "husky": "^4.2.5",
     "rollup": "^2.24.0"
   },
   "eslintConfig": {
