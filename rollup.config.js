@@ -32,29 +32,25 @@ const injector = entryCodeInjector({
       'XPStyle'
     ].sort();
     const NSIS_BLOCKS = ['Function', 'FunctionEnd', 'Section', 'SectionEnd', 'SectionGroup', 'SectionGroupEnd', 'PageEx', 'PageExEnd'].sort();
-    const NSIS_PROPERTY = [
-      'admin', 'all', 'auto',
-      'both',
-      'colored',
-      'false', 'force',
-      'hide', 'highest',
-      'lastused', 'leave', 'listonly',
-      'none', 'normal', 'notset',
-      'off', 'on', 'open',
-      'print',
-      'show', 'silent', 'silentlog', 'smooth',
-      'textonly', 'true',
-      'user',
-      'ARCHIVE',
-      'FILE_ATTRIBUTE_ARCHIVE', 'FILE_ATTRIBUTE_NORMAL', 'FILE_ATTRIBUTE_OFFLINE', 'FILE_ATTRIBUTE_READONLY', 'FILE_ATTRIBUTE_SYSTEM', 'FILE_ATTRIBUTE_TEMPORARY',
-      'HKCR', 'HKCR32', 'HKCR64', 'HKCU', 'HKCU32', 'HKCU64', 'HKLM', 'HKLM32', 'HKLM64', 'HKDD', 'HKPD', 'HKU', 'HKEY_CLASSES_ROOT', 'HKEY_CURRENT_CONFIG', 'HKEY_CURRENT_USER', 'HKEY_DYN_DATA', 'HKEY_LOCAL_MACHINE', 'HKEY_PERFORMANCE_DATA', 'HKEY_USERS',
-      'IDABORT', 'IDCANCEL', 'IDIGNORE', 'IDNO', 'IDOK', 'IDRETRY', 'IDYES',
+    const NSIS_PROPERTIES = [
+      'admin', 'all', 'ARCHIVE', 'auto',
+      'both', 'bottom', 'bzip2',
+      'colored', 'components','current', 'custom',
+      'directory',
+      'false', 'FILE_ATTRIBUTE_ARCHIVE', 'FILE_ATTRIBUTE_NORMAL', 'FILE_ATTRIBUTE_OFFLINE', 'FILE_ATTRIBUTE_READONLY', 'FILE_ATTRIBUTE_SYSTEM', 'FILE_ATTRIBUTE_TEMPORARY', 'force',
+      'hide', 'highest', 'HKCR', 'HKCR32', 'HKCR64', 'HKCU', 'HKCU32', 'HKCU64', 'HKDD', 'HKEY_CLASSES_ROOT', 'HKEY_CURRENT_CONFIG', 'HKEY_CURRENT_USER', 'HKEY_DYN_DATA', 'HKEY_LOCAL_MACHINE', 'HKEY_PERFORMANCE_DATA', 'HKEY_USERS', 'HKLM', 'HKLM32', 'HKLM64', 'HKPD', 'HKU',
+      'IDABORT', 'IDCANCEL', 'IDIGNORE', 'IDNO', 'IDOK', 'IDRETRY', 'IDYES', 'ifdiff', 'ifnewer', 'instfiles',
+      'lastused', 'leave', 'left', 'license', 'listonly', 'lzma',
       'MB_ABORTRETRYIGNORE', 'MB_DEFBUTTON1', 'MB_DEFBUTTON2', 'MB_DEFBUTTON3', 'MB_DEFBUTTON4', 'MB_ICONEXCLAMATION', 'MB_ICONINFORMATION', 'MB_ICONQUESTION', 'MB_ICONSTOP', 'MB_OK', 'MB_OKCANCEL', 'MB_RETRYCANCEL', 'MB_RIGHT', 'MB_RTLREADING', 'MB_SETFOREGROUND', 'MB_TOPMOST', 'MB_USERICON', 'MB_YESNO',
-      'NORMAL',
-      'OFFLINE',
-      'READONLY',
-      'SHCTX', 'SHELL_CONTEXT', 'SYSTEM',
-      'TEMPORARY'
+      'nevershow', 'none', 'normal', 'notset',
+      'off', 'OFFLINE', 'on', 'open',
+      'print',
+      'READONLY', 'right',
+      'SHCTX', 'SHELL_CONTEXT', 'show', 'silent', 'silentlog', 'smooth', 'SYSTEM',
+      'TEMPORARY', 'textonly', 'top', 'true', 'try',
+      'un.components', 'un.custom', 'un.directory', 'un.instfiles', 'un.license', 'uninstConfirm', 'user',
+      'Win10', 'Win7', 'Win8', 'WinVista',
+      'zlib'
     ].sort();
     const NSIS_IMPORTANT = [
       '!addincludedir', '!addplugindir', '!appendfile',
@@ -75,12 +71,13 @@ const injector = entryCodeInjector({
     ].sort();
     const NSIS_IMPORTANT_BLOCKS = ['ifdef', 'ifndef', 'if', 'ifmacrodef', 'ifmacrondef', 'else', 'endif'].sort();
 
+
     return (code
-      .replace('%NSIS_KEYWORDS%', retrie(NSIS_KEYWORDS))
       .replace('%NSIS_BLOCKS%', retrie(NSIS_BLOCKS))
-      .replace('%NSIS_IMPORTANT%', retrie(NSIS_IMPORTANT))
       .replace('%NSIS_IMPORTANT_BLOCKS%', retrie(NSIS_IMPORTANT_BLOCKS))
-      .replace('%NSIS_PROPERTY%', retrie(NSIS_PROPERTY))
+      .replace('%NSIS_IMPORTANT%', retrie(NSIS_IMPORTANT))
+      .replace('%NSIS_KEYWORDS%', retrie(NSIS_KEYWORDS))
+      .replace('%NSIS_PROPERTIES%', retrie(NSIS_PROPERTIES))
     );
   }
 });

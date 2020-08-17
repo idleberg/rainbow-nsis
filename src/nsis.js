@@ -15,7 +15,7 @@ Rainbow.extend('nsis', [
     },
     {
         'name': 'constant.language',
-        'pattern': /\b((un\.)?components|(un\.)?custom|(un\.)?directory|(un\.)?instfiles|(un\.)?license|uninstConfirm|admin|all|auto|both|bottom|bzip2|current|false|force|hide|highest|ifdiff|ifnewer|lastused|leave|left|listonly|lzma|nevershow|none|normal|notset|off|on|right|show|silent|silentlog|textonly|top|true|try|user|Win10|Win7|Win8|WinVista|zlib)(?=\(|\b)/g
+        'pattern': /\b%NSIS_CONSTANTS%(?=\(|\b)/g
     },
 
     {
@@ -43,7 +43,7 @@ Rainbow.extend('nsis', [
     },
     {
         'name': 'entity.compiler.block',
-        'pattern': /NSIS_IMPORTANT_BLOCKS(?=\(|\b)/g
+        'pattern': /%NSIS_IMPORTANT_BLOCKS%(?=\(|\b)/g
     },
     {
         'name': 'keyword.command',

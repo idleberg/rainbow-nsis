@@ -18,12 +18,12 @@
         },
         {
             'name': 'constant.language',
-            'pattern': /\b((un\.)?components|(un\.)?custom|(un\.)?directory|(un\.)?instfiles|(un\.)?license|uninstConfirm|admin|all|auto|both|bottom|bzip2|current|false|force|hide|highest|ifdiff|ifnewer|lastused|leave|left|listonly|lzma|nevershow|none|normal|notset|off|on|right|show|silent|silentlog|textonly|top|true|try|user|Win10|Win7|Win8|WinVista|zlib)(?=\(|\b)/g
+            'pattern': /\b%NSIS_CONSTANTS%(?=\(|\b)/g
         },
 
         {
             'name': 'constant.option',
-            'pattern': /\b%NSIS_PROPERTIES%(?=\(|\b)/g
+            'pattern': /\b(?:ARCHIVE|FILE_ATTRIBUTE_(?:ARCHIVE|NORMAL|OFFLINE|READONLY|SYSTEM|TEMPORARY)|HK(?:C(?:R(?:(?:32|64))?|U(?:(?:32|64))?)|DD|EY_(?:C(?:LASSES_ROOT|URRENT_(?:CONFIG|USER))|DYN_DATA|LOCAL_MACHINE|PERFORMANCE_DATA|USERS)|LM(?:(?:32|64))?|PD|U)|ID(?:ABORT|CANCEL|IGNORE|NO|OK|RETRY|YES)|MB_(?:ABORTRETRYIGNORE|DEFBUTTON[1234]|ICON(?:EXCLAMATION|INFORMATION|QUESTION|STOP)|OK(?:CANCEL)?|R(?:ETRYCANCEL|IGHT|TLREADING)|SETFOREGROUND|TOPMOST|USERICON|YESNO)|OFFLINE|READONLY|S(?:H(?:CTX|ELL_CONTEXT)|YSTEM)|TEMPORARY|Win(?:10|Vista|[78])|a(?:dmin|ll|uto)|b(?:ot(?:tom|h)|zip2)|c(?:o(?:lored|mponents)|u(?:rrent|stom))|directory|f(?:alse|orce)|hi(?:de|ghest)|i(?:f(?:diff|newer)|nstfiles)|l(?:astused|e(?:ave|ft)|i(?:cense|stonly)|zma)|n(?:evershow|o(?:ne|rmal|tset))|o(?:ff|pen|n)|print|right|s(?:how|ilent(?:log)?|mooth)|t(?:extonly|op|r(?:ue|y))|u(?:n(?:\.(?:c(?:omponents|ustom)|directory|instfiles|license)|instConfirm)|ser)|zlib)(?=\(|\b)/g
         },
         {
             'matches': {
@@ -46,7 +46,7 @@
         },
         {
             'name': 'entity.compiler.block',
-            'pattern': /NSIS_IMPORTANT_BLOCKS(?=\(|\b)/g
+            'pattern': /(?:e(?:lse|ndif)|if(?:(?:def|macro(?:def|ndef)|ndef))?)(?=\(|\b)/g
         },
         {
             'name': 'keyword.command',
