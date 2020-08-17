@@ -57,11 +57,11 @@ const injector = entryCodeInjector({
       '!cd',
       '!define', '!delfile',
       '!echo',
-      '!else', '!endif', '!error', '!execute',
+      '!error', '!execute',
       '!finalize',
       '!getdllversion', '!gettlbversion',
-      '!ifdef', '!ifmacrodef', '!ifmacrondef', '!ifndef', '!if', '!include', '!insertmacro',
-      '!macroend', '!macro', '!makensis',
+      '!include', '!insertmacro',
+      '!makensis',
       '!packhdr', '!pragma',
       '!searchparse', '!searchreplace', '!system',
       '!tempfile',
@@ -69,7 +69,7 @@ const injector = entryCodeInjector({
       '!verbose',
       '!warning'
     ].sort();
-    const NSIS_IMPORTANT_BLOCKS = ['ifdef', 'ifndef', 'if', 'ifmacrodef', 'ifmacrondef', 'else', 'endif'].sort();
+    const NSIS_IMPORTANT_BLOCKS = ['!ifdef', '!ifndef', '!if', '!ifmacrodef', '!ifmacrondef', '!else', '!endif'].sort();
 
 
     return (code
