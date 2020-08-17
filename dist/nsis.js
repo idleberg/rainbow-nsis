@@ -42,11 +42,11 @@
         },
         {
             'name': 'support.compiler',
-            'pattern': /!(?:a(?:dd(?:includedir|plugindir)|ppendfile)|cd|de(?:fine|lfile)|e(?:cho|lse|ndif|rror|xecute)|finalize|get(?:dllversion|tlbversion)|i(?:f(?:(?:def|macro(?:def|ndef)|ndef))?|n(?:clude|sertmacro))|ma(?:cro(?:end)?|kensis)|p(?:ackhdr|ragma)|s(?:earch(?:parse|replace)|ystem)|tempfile|undef|verbose|warning)(?=\(|\b)/g
+            'pattern': /!(?:a(?:dd(?:includedir|plugindir)|ppendfile)|cd|de(?:fine|lfile)|e(?:cho|rror|xecute)|finalize|get(?:dllversion|tlbversion)|in(?:clude|sertmacro)|makensis|p(?:ackhdr|ragma)|s(?:earch(?:parse|replace)|ystem)|tempfile|undef|verbose|warning)(?=\(|\b)/g
         },
         {
             'name': 'entity.compiler.block',
-            'pattern': /(?:e(?:lse|ndif)|if(?:(?:def|macro(?:def|ndef)|ndef))?)(?=\(|\b)/g
+            'pattern': /!(?:e(?:lse|ndif)|if(?:(?:def|macro(?:def|ndef)|ndef))?)(?=\(|\b)/g
         },
         {
             'name': 'keyword.command',
