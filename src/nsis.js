@@ -27,15 +27,15 @@ Rainbow.extend('nsis', [
             1: 'variable.dollar-sign',
             2: 'variable'
         },
-        'pattern': /(\$)(\w+)\b/g
+        'pattern': /(\$)(\w[\w\.]*)\b/g
     },
     {
         'name': 'variable.definition',
-        'pattern': /\${[\w]+}/g
+        'pattern': /\${[\w.:-]+}/g
     },
     {
         'name': 'variable.language',
-        'pattern': /\$\([\w]+\)/g
+        'pattern': /\$\([\w^.:-]+\)/g
     },
     {
         'name': 'support.compiler',
