@@ -26,6 +26,7 @@ const injector = entryCodeInjector({
       'Quit',
       'ReadEnvStr', 'ReadINIStr', 'ReadRegDWORD', 'ReadRegStr', 'Reboot', 'RegDLL', 'Rename', 'RequestExecutionLevel', 'ReserveFile', 'Return', 'RMDir',
       'SearchPath', 'SectionGetFlags', 'SectionGetInstTypes', 'SectionGetSize', 'SectionGetText', 'SectionIn', 'SectionSetFlags', 'SectionSetInstTypes', 'SectionSetSize', 'SectionSetText', 'SendMessage', 'SetAutoClose', 'SetBrandingImage', 'SetCompress', 'SetCompressor', 'SetCompressorDictSize', 'SetCtlColors', 'SetCurInstType', 'SetDatablockOptimize', 'SetDateSave', 'SetDetailsPrint', 'SetDetailsView', 'SetErrorLevel', 'SetErrors', 'SetFileAttributes', 'SetFont', 'SetOutPath', 'SetOverwrite', 'SetRebootFlag', 'SetRegView', 'SetShellVarContext', 'SetSilent', 'ShowInstDetails', 'ShowUninstDetails', 'ShowWindow', 'SilentInstall', 'SilentUnInstall', 'Sleep', 'SpaceTexts', 'StrCmp', 'StrCmpS', 'StrCpy', 'StrLen', 'SubCaption',
+      'Target',
       'Unicode', 'UninstallButtonText', 'UninstallCaption', 'UninstallIcon', 'UninstallSubCaption', 'UninstallText', 'UninstPage', 'UnRegDLL',
       'Var', 'VIAddVersionKey', 'VIFileVersion', 'VIProductVersion',
       'WindowIcon', 'WriteINIStr', 'WriteRegBin', 'WriteRegDWORD', 'WriteRegExpandStr', 'WriteRegMultiStr', 'WriteRegNone', 'WriteRegStr', 'WriteUninstaller',
@@ -33,7 +34,7 @@ const injector = entryCodeInjector({
     ].sort();
     const NSIS_BLOCKS = ['Function', 'FunctionEnd', 'Section', 'SectionEnd', 'SectionGroup', 'SectionGroupEnd', 'PageEx', 'PageExEnd'].sort();
     const NSIS_PROPERTIES = [
-      'admin', 'all', 'ARCHIVE', 'auto',
+      'admin', 'all', 'amd-unicode', 'ARCHIVE', 'auto',
       'both', 'bottom', 'bzip2',
       'colored', 'components','current', 'custom',
       'directory',
@@ -50,6 +51,7 @@ const injector = entryCodeInjector({
       'TEMPORARY', 'textonly', 'top', 'true', 'try',
       'un.components', 'un.custom', 'un.directory', 'un.instfiles', 'un.license', 'uninstConfirm', 'user',
       'Win10', 'Win7', 'Win8', 'WinVista',
+      'x86-ansi', 'x86-unicode',
       'zlib'
     ].sort();
     const NSIS_IMPORTANT = [
