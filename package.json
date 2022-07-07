@@ -8,8 +8,8 @@
   "scripts": {
     "build": "rollup --config",
     "dev": "npm run start",
-    "fix": "eslint --fix ./src",
-    "lint": "eslint ./src",
+    "fix": "eslint --fix ./src --ignore-path .gitignore",
+    "lint": "eslint ./src --ignore-path .gitignore",
     "start": "rollup --watch --config",
     "test": "npm run lint"
   },
