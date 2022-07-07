@@ -27,7 +27,7 @@ Rainbow.extend('nsis', [
             1: 'variable.dollar-sign',
             2: 'variable'
         },
-        'pattern': /(\$)(\w[\w\.]*)\b/g
+        'pattern': /(\$)(\w[\w.]*)\b/g
     },
     {
         'name': 'variable.definition',
