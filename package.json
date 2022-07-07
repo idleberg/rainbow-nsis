@@ -5,6 +5,11 @@
   "repository": "https://github.com/idleberg/rainbow-nsis",
   "license": "MIT",
   "main": "dist/nsis.js",
+  "files:": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "build": "rollup --config",
     "dev": "npm run start",
