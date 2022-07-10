@@ -34,7 +34,7 @@ const injector = entryCodeInjector({
     ].sort();
     const NSIS_BLOCKS = ['Function', 'FunctionEnd', 'Section', 'SectionEnd', 'SectionGroup', 'SectionGroupEnd', 'PageEx', 'PageExEnd'].sort();
     const NSIS_PROPERTIES = [
-      'admin', 'all', 'amd-unicode', 'ARCHIVE', 'auto',
+      'admin', 'all', 'amd64-unicode', 'ARCHIVE', 'auto',
       'both', 'bottom', 'bzip2',
       'colored', 'components','current', 'custom',
       'directory',
