@@ -68,6 +68,7 @@ const injector = entryCodeInjector({
       '!searchparse', '!searchreplace', '!system',
       '!tempfile',
       '!undef',
+      '!uninstfinalize',
       '!verbose',
       '!warning'
     ].sort();
