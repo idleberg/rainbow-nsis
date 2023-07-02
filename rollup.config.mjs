@@ -1,6 +1,6 @@
 import { entryCodeInjector } from 'rollup-plugin-entry-code-injector';
-import { terser } from "rollup-plugin-terser";
 import retrie from 'retrie';
+import terser from '@rollup/plugin-terser';
 
 const injector = entryCodeInjector({
   transformer: code => {
@@ -55,7 +55,7 @@ const injector = entryCodeInjector({
       'zlib'
     ].sort();
     const NSIS_IMPORTANT = [
-      '!addincludedir', '!addplugindir', '!appendfile',
+      '!addincludedir', '!addplugindir', '!appendfile', '!assert',
       '!cd',
       '!define', '!delfile',
       '!echo',
