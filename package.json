@@ -26,15 +26,15 @@
     "syntax highlighter"
   ],
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.3",
-    "@typescript-eslint/eslint-plugin": "^5.60.1",
-    "@typescript-eslint/parser": "^5.60.1",
-    "eslint": "^8.44.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.1",
     "eslint-config-recommended": "^4.1.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
+    "lint-staged": "^13.3.0",
     "retrie": "^0.1.1",
-    "rollup": "^3.26.0",
+    "rollup": "^3.30.0",
     "rollup-plugin-entry-code-injector": "^1.0.0"
   },
   "husky": {
@@ -44,5 +44,6 @@
   },
   "lint-staged": {
     "*.(js|json)": "eslint --cache --fix"
-  }
+  },
+  "packageManager": "pnpm@11.7.0+sha512.19cc852c120c7125760f2443ee6be0ca5b40f9f50598de1a09a1f177503e010e57c23c77646e01e761de59bf874fb22a3398c33ab9691fc13eb946b6f0f4d620"
 }
