@@ -55,7 +55,7 @@ const injector = entryCodeInjector({
       'zlib'
     ].sort();
     const NSIS_IMPORTANT = [
-      '!addincludedir', '!addplugindir', '!appendfile', '!assert',
+      '!addincludedir', '!addplugindir', '!appendfile', '!appendmemfile', '!assert',
       '!cd',
       '!define', '!delfile',
       '!echo',
@@ -63,7 +63,7 @@ const injector = entryCodeInjector({
       '!finalize',
       '!getdllversion', '!gettlbversion',
       '!include', '!insertmacro',
-      '!makensis',
+      '!macroundef', '!makensis',
       '!packhdr', '!pragma',
       '!searchparse', '!searchreplace', '!system',
       '!tempfile',
@@ -72,7 +72,7 @@ const injector = entryCodeInjector({
       '!verbose',
       '!warning'
     ].sort();
-    const NSIS_IMPORTANT_BLOCKS = ['!ifdef', '!ifndef', '!if', '!ifmacrodef', '!ifmacrondef', '!else', '!endif'].sort();
+    const NSIS_IMPORTANT_BLOCKS = ['!ifdef', '!ifndef', '!if', '!ifmacrodef', '!ifmacrondef', '!else', '!elseif', '!elseifdef', '!elseifndef', '!elseifmacrodef', '!elseifmacrondef', '!endif', '!macro', '!macroend'].sort();
 
 
     return (code
