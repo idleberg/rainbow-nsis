@@ -15,6 +15,7 @@
     "dev": "npm run start",
     "fix": "eslint --fix ./src --ignore-path .gitignore",
     "lint": "eslint ./src --ignore-path .gitignore",
+    "prepare": "npm run build",
     "start": "rollup --watch --config",
     "test": "npm run lint"
   },
